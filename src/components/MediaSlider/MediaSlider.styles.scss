@@ -1,0 +1,30 @@
+.media-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 0 50px;
+  padding: 24px 0;
+  background: #f4f5f7;
+  overflow-x: auto;
+}
+
+.media-slider__slide {
+  display: inline-block;
+  padding: 0 12px;
+  width: 33.33%;
+  flex: 0 0 auto;
+}
+
+.media-slider__content {
+  display: block;
+  padding: 48px 40px;
+  color: #2e3134;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.media-slider__copy {
+  margin: 16px 0 0;
+}
