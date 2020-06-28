@@ -13,5 +13,7 @@
 }
 
 .button--large {
-  padding: 18px 140px;
+  @media (min-width: 768px) {
+    padding: 18px 140px;
+  }
 }
