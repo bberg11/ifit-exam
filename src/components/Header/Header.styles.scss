@@ -1,4 +1,11 @@
 .header {
+  top: 0;
+  z-index: 1;
+  background: #ffffff;
+}
+
+.header--is-sticky {
+  position: sticky;
 }
 
 .header__wrapper {

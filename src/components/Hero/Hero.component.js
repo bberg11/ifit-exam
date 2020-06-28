@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import classNames from 'classnames';
 
 import Button from '../Button/Button.component';
@@ -7,6 +7,7 @@ import './Hero.styles.scss';
 
 const Hero = () => {
   const [textIsVisible, setTextIsVisible] = useState(false);
+  const domRef = useRef();
 
   useEffect(() => {
     window.setTimeout(() => {
@@ -14,8 +15,27 @@ const Hero = () => {
     }, 500);
   }, []);
 
+  useEffect(() => {
+    const element = domRef.current;
+    const headerEl = document.querySelector('header');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          headerEl.classList.add('header--is-sticky');
+        } else {
+          headerEl.classList.remove('header--is-sticky');
+        }
+      });
+    });
+
+    observer.observe(element);
+
+    return () => observer.unobserve(element);
+  }, []);
+
   return (
-    <section className="hero">
+    <section className="hero" ref={domRef}>
       <div
         className="hero__background"
         style={{ backgroundImage: `url(${heroImage})` }}
