@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .button {
   display: inline-block;
   padding: 10px 16px;
@@ -13,7 +15,7 @@
 }
 
 .button--large {
-  @media (min-width: 768px) {
+  @media (min-width: #{$medium-breakpoint}) {
     padding: 18px 140px;
   }
 }

@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .media-slider {
   position: relative;
   margin: 0 0 50px;
@@ -34,7 +36,7 @@
 .media-slider__button--previous {
   left: 8px;
 
-  @media (min-width: 1024) {
+  @media (min-width: #{$wide-breakpoint}) {
     left: 16px;
   }
 }
@@ -42,7 +44,7 @@
 .media-slider__button--next {
   right: 8px;
 
-  @media (min-width: 1024) {
+  @media (min-width: #{$wide-breakpoint}) {
     right: 16px;
   }
 }
@@ -60,11 +62,11 @@
   width: 100%;
   flex: 0 0 auto;
 
-  @media (min-width: 768px) {
+  @media (min-width: #{$medium-breakpoint}) {
     width: 50%;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: #{$wide-breakpoint}) {
     width: 33.33%;
   }
 }

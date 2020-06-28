@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .header {
   top: 0;
   z-index: 1;
@@ -24,7 +26,7 @@
   & + & {
     padding: 16px 0;
 
-    @media (min-width: 768px) {
+    @media (min-width: #{$medium-breakpoint}) {
       padding: 0;
       border-top: 2px solid #d5d6d6;
     }
@@ -42,7 +44,7 @@
 .header__utility-nav {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: #{$medium-breakpoint}) {
     display: inline-flex;
   }
 }
@@ -52,7 +54,7 @@
   border-right: 2px solid #d5d6d6;
 
   &:first-child {
-    @media (min-width: 1392px) {
+    @media (min-width: #{$x-wide-breakpoint}) {
       padding-left: 0;
     }
   }
@@ -72,7 +74,7 @@
 .header__nav {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: #{$medium-breakpoint}) {
     display: inline-flex;
     margin: 0;
     padding: 0;
@@ -88,7 +90,7 @@
 .header__auth {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: #{$medium-breakpoint}) {
     display: block;
   }
 }
@@ -108,7 +110,7 @@
     outline: none;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: #{$medium-breakpoint}) {
     display: none;
   }
 }

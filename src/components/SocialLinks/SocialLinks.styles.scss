@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .social-links {
   display: inline-flex;
   margin: 0;
@@ -14,7 +16,7 @@
   width: 40px;
   z-index: 1;
 
-  @media (min-width: 768px) {
+  @media (min-width: #{$medium-breakpoint}) {
     margin: 0 16px;
   }
 

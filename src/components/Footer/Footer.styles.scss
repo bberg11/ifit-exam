@@ -1,3 +1,5 @@
+@import '../../assets/styles/variables.scss';
+
 .footer {
   color: #ffffff;
   background: #2e3134;
@@ -7,12 +9,12 @@
   padding: 16px;
   border-bottom: 2px solid #585a5d;
 
-  @media (min-width: 375px) {
+  @media (min-width: #{$small-breakpoint}) {
     padding: 0;
     text-align: center;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: #{$medium-breakpoint}) {
     display: flex;
     justify-content: center;
     padding: 48px 0;
@@ -22,13 +24,13 @@
 .footer__menu {
   margin: 16px;
 
-  @media (min-width: 375px) {
+  @media (min-width: #{$small-breakpoint}) {
     display: inline-block;
     text-align: left;
     vertical-align: top;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: #{$medium-breakpoint}) {
     margin: 0 46px;
     width: 184px;
   }
@@ -77,7 +79,7 @@
   letter-spacing: 0.3px;
   text-align: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: #{$medium-breakpoint}) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,7 +89,7 @@
 .footer__language {
   margin: 0 0 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: #{$medium-breakpoint}) {
     position: absolute;
     left: 0;
     margin: 0;
@@ -97,7 +99,7 @@
 .footer__copyright {
   margin: 0 0 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: #{$medium-breakpoint}) {
     margin: 0 12px;
   }
 }
