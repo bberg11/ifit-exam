@@ -16,16 +16,25 @@
 .equipment-grid__items {
   display: flex;
   justify-content: space-between;
-  margin: 0 -12px;
+  flex-wrap: wrap;
+
+  @media (min-width: 1392px) {
+    margin: 0 -12px;
+  }
 }
 
 .equipment-grid__item {
   box-sizing: border-box;
   display: block;
-  padding: 0 12px;
-  width: 25%;
+  padding: 12px;
+  width: 50%;
   text-align: center;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    padding: 0 12px;
+    width: 25%;
+  }
 }
 
 .equipment-grid__content {
@@ -36,15 +45,23 @@
   display: inline-block;
   margin: 0 0 10px;
   max-width: 100%;
-  max-height: 228px;
+  max-height: 171px;
+
+  @media (min-width: 1024px) {
+    max-height: 228px;
+  }
 }
 
 .equipment-grid__title {
   margin: 0;
   color: #2e3134;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0.3px;
   text-decoration: none;
   opacity: 0.8;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
 }
