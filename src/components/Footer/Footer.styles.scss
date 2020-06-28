@@ -4,15 +4,34 @@
 }
 
 .footer__menus {
-  display: flex;
-  justify-content: center;
-  padding: 48px 0;
+  padding: 16px;
   border-bottom: 2px solid #585a5d;
+
+  @media (min-width: 375px) {
+    padding: 0;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    padding: 48px 0;
+  }
 }
 
 .footer__menu {
-  margin: 0 46px;
-  width: 184px;
+  margin: 16px;
+
+  @media (min-width: 375px) {
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  @media (min-width: 768px) {
+    margin: 0 46px;
+    width: 184px;
+  }
 }
 
 .footer__menu-heading {
@@ -51,16 +70,24 @@
 }
 
 .footer__meta {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 0 auto;
   padding: 20px 0;
   letter-spacing: 0.3px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .footer__copyright {
-  margin: 0 12px;
+  margin: 0 0 12px;
+
+  @media (min-width: 768px) {
+    margin: 0 12px;
+  }
 }
 
 .footer__legal {

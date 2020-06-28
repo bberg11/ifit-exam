@@ -8,11 +8,15 @@
 .social-links__item {
   display: block;
   position: relative;
-  margin: 0 16px;
+  margin: 0 8px;
   padding: 0;
   height: 40px;
   width: 40px;
   z-index: 1;
+
+  @media (min-width: 768px) {
+    margin: 0 16px;
+  }
 
   &:after {
     content: '';
