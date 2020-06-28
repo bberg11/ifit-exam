@@ -10,8 +10,16 @@
 .media-slider__slide {
   display: inline-block;
   padding: 0 12px;
-  width: 33.33%;
+  width: 80%;
   flex: 0 0 auto;
+
+  @media (min-width: 768px) {
+    width: 45%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 30%;
+  }
 }
 
 .media-slider__content {
