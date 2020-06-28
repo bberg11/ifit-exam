@@ -4,6 +4,7 @@ import Header from '../Header/Header.component';
 import Hero from '../Hero/Hero.component';
 import Footer from '../Footer/Footer.component';
 import MediaSlider from '../MediaSlider/MediaSlider.component';
+import LibraryGrid from '../LibraryGrid/LibraryGrid.component';
 import './App.styles.scss';
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
       <div className="app__body">
         <Hero />
         <MediaSlider />
+        <LibraryGrid />
       </div>
       <Footer />
     </div>
