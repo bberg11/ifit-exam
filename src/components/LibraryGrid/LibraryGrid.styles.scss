@@ -8,6 +8,14 @@
 .library-grid__cell {
   box-sizing: border-box;
   padding: 12px;
-  width: 25%;
+  width: 100%;
   text-decoration: none;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 25%;
+  }
 }
