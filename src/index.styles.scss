@@ -4,3 +4,8 @@ body {
   font-size: 14px;
   line-height: 1.25;
 }
+
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}

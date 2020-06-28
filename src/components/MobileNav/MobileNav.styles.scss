@@ -1,0 +1,26 @@
+.mobile-nav {
+}
+
+.mobile-nav__menu {
+  margin: 0 0 20px;
+  padding: 0;
+  line-height: 1;
+  list-style: none;
+}
+
+.mobile-nav__item {
+}
+
+.mobile-nav__link {
+  display: block;
+  padding: 20px;
+  border-bottom: 1px solid #d5d6d6;
+  color: rgba(46, 49, 52, 0.8);
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
