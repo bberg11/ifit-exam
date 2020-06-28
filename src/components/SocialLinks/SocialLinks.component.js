@@ -9,7 +9,7 @@ const SocialLinks = () => {
         <a
           href="https://www.youtube.com/user/iFitLive"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="social-links__link"
         >
           <svg className="social-links__icon" viewBox="0 0 24 24">
@@ -26,7 +26,7 @@ const SocialLinks = () => {
         <a
           href="https://pinterest.com/ifit"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="social-links__link"
         >
           <svg className="social-links__icon" viewBox="0 0 24 24">
@@ -43,7 +43,7 @@ const SocialLinks = () => {
         <a
           href="https://www.facebook.com/ifit"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="social-links__link"
         >
           <svg className="social-links__icon" viewBox="0 0 24 24">
@@ -60,7 +60,7 @@ const SocialLinks = () => {
         <a
           href="https://twitter.com/ifit"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="social-links__link"
         >
           <svg className="social-links__icon" viewBox="0 0 24 24">
@@ -77,7 +77,7 @@ const SocialLinks = () => {
         <a
           href="https://instagram.com/ifit"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           className="social-links__link"
         >
           <svg className="social-links__icon" viewBox="0 0 24 24">
