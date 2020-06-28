@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import classNames from 'classnames';
 
 import treadmillImage from '../../assets/images/treadmill.png';
 import bikesImage from '../../assets/images/bikes.png';
@@ -9,12 +10,33 @@ import Card from '../Card/Card.component';
 import './EquipmentGrid.styles.scss';
 
 const EquipmentGrid = () => {
+  const [isVisible, setVisible] = useState(true);
+  const domRef = useRef();
+
+  useEffect(() => {
+    const element = domRef.current;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => setVisible(entry.isIntersecting));
+    });
+
+    observer.observe(element);
+
+    return () => observer.unobserve(element);
+  }, []);
+
   return (
     <section className="equipment-grid">
       <h2 className="equipment-grid__heading">
         Interested in our exciting iFit-enabled equipment?
       </h2>
-      <div className="equipment-grid__items">
+      <div
+        className={classNames({
+          'equipment-grid__items': true,
+          'equipment-grid__items--is-visible': isVisible,
+        })}
+        ref={domRef}
+      >
         <a href="/#" className="equipment-grid__item">
           <Card>
             <div className="equipment-grid__content">
